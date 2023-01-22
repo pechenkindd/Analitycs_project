@@ -1,7 +1,3 @@
-header {
-	background-color: #6F5B9A;
-}
-
 body {
   background: url(img_1.png);
 	display: block;
@@ -17,4 +13,20 @@ body {
 
 .container {
 	background: #F4FAFF;
+}
+
+.container, .navbar {
+	padding: 10px;
+}
+
+.navbar {
+	align-items: center;
+	background-color: #6F5B9A;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar a {
+  color: #DEE7E7;
 }

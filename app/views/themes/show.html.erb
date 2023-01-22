@@ -1,0 +1,9 @@
+<div class="container">
+  <h1 class="title-lg mt-lg mb"><%= @theme.name %></h1>
+  <div>
+    <% @news.each do |new| %>
+      <div class="title mt"><%= link_to new.topic, "news/#{new.id}" %></div>
+      <div class="new-footer mt-sm"><%= l(new.created_at, format: :short) %></div>
+    <% end %>
+  </div>
+</div>

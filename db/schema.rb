@@ -10,15 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_22_165403) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_22_204147) do
   create_table "news", force: :cascade do |t|
-    t.integer "new_number", null: false
     t.text "topic", null: false
     t.text "body", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "theme_id"
-    t.index ["new_number"], name: "index_news_on_new_number", unique: true
     t.index ["theme_id"], name: "index_news_on_theme_id"
   end
 

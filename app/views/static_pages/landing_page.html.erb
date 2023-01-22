@@ -1,4 +1,7 @@
 <div class="container">
-  <h1 class="title-lg mt">StaticPages#landing_page</h1>
-  <p class="mt">Find me in app/views/static_pages/landing_page.html.erb</p>  
+  <h1 class="title-lg mt-lg mb">Выберете интересующую вас тему</h1>
+
+  <% @themes.each do |theme| %>
+    <div class="title mt"><%= link_to theme.name, "themes/#{theme.id}" %></div>
+  <% end %>
 </div>
