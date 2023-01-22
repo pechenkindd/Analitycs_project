@@ -1,0 +1,11 @@
+.form-text-field, 
+.form-text-area {
+  border: 1px solid #6F5B9A;
+  padding: 7.5px, 10px;
+}
+
+.form-text-field:focus, 
+.form-text-area:focus {
+  background-color: #DDD9E8;
+  outline-width: 0;
+}

@@ -1,0 +1,20 @@
+header {
+	background-color: #6F5B9A;
+}
+
+body {
+  background: url(img_1.png);
+	display: block;
+	justify-content: center;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin-left: 160px;
+	margin-right: 160px;
+	width: 100%;
+}
+
+.container {
+	background: #F4FAFF;
+}
