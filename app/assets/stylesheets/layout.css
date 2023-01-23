@@ -30,3 +30,9 @@ body {
 .navbar a {
   color: #DEE7E7;
 }
+
+.new {
+  border-color: #C1C3C3;
+  border-style: solid;
+  border-radius: 5px;
+}
