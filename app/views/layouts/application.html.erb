@@ -11,13 +11,20 @@
   </head>
 
   <header class="navbar">
-    <span class="link"><%= link_to "Главная", root_path %></span>
+    <span class="link"><%= link_to t('menu.home'), root_path %></span>
+    <div>
+      <% I18n.available_locales.each do |locale|%>
+        <span class="link">
+          <%= link_to locale, root_path(locale: locale)%>
+        </span>
+      <% end %>
+    <div>
      <% if current_user %>
       <span class="current-user"><%= current_user.email %>
-      <div class="log-out-btn"><%= button_to "Выйти", destroy_user_session_path, method: :delete, data: { turbo: false } %></div>
+      <div class="log-out-btn"><%= button_to t("menu.log_out"), destroy_user_session_path, method: :delete, data: { turbo: false } %></div>
     <% else %>
-      <span class="link"><%= link_to "Регистрация", new_user_registration_path %></span>
-      <span class="link"><%= link_to "Войти", new_user_session_path %></span>
+      <span class="link"><%= link_to t("menu.register"), new_user_registration_path %></span>
+      <span class="link"><%= link_to t("menu.log_in"), new_user_session_path %></span>
     <% end %>
   </header>
 

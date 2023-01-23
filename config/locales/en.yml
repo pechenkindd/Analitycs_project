@@ -29,5 +29,22 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
+# en:
+#   hello: "Hello world"
+
 en:
-  hello: "Hello world"
+  device:
+    registrations:
+      sign_up: "Sign up"
+      password: "Password"
+      password_confirmation: "Password confirmation"
+    sessions:
+      log_in: "Log in"
+      password: "Password"
+      remember_me: "Remember me"
+      forgot_pswd: "Forgot your password?"
+  menu:
+    home: "Home"
+    register: "Register"
+    log_in: "Log in"
+    log_out: "Log out"

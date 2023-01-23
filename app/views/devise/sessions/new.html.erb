@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="title-lg mt">Log in</h2>
+  <h2 class="title-lg mt"><%= t('device.sessions.log_in')%></h2>
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: false }) do |f| %>
     <div class="field mt">
@@ -8,19 +8,19 @@
     </div>
 
     <div class="field mt-sm">
-      <%= f.label :password %><br />
+      <%= f.label :password, t('device.sessions.password') %><br />
       <%= f.password_field :password, autocomplete: "current-password", class: "form-text-field" %>
     </div>
 
     <% if devise_mapping.rememberable? %>
       <div class="field mt-sm">
         <%= f.check_box :remember_me %>
-        <%= f.label :remember_me %>
+        <%= f.label :remember_me, t('device.sessions.remember_me') %>
       </div>
     <% end %>
 
     <div class="actions mt mb-sm">
-      <%= f.submit "Log in", class: "button button-main" %>
+      <%= f.submit t("device.sessions.log_in"), class: "button button-main" %>
     </div>
   <% end %>
 

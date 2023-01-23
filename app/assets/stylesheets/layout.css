@@ -13,6 +13,7 @@ body {
 
 .container {
 	background: #F4FAFF;
+	height: 670px;
 }
 
 .container, .navbar {

@@ -1,0 +1,16 @@
+ru:
+  device:
+    registrations:
+      sign_up: "Регистрация"
+      password: "Пароль"
+      password_confirmation: "Повторите пароль"
+    sessions:
+      log_in: "Вход"
+      password: "Пароль"
+      remember_me: "Запомнить меня"
+      forgot_pswd: "Забыли пароль?"
+  menu:
+    home: "Главная"
+    register: "Регистрация"
+    log_in: "Вход"
+    log_out: "Выйти"

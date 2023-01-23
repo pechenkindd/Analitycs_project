@@ -65,6 +65,8 @@ group :development do
   # gem "spring"
 end
 
+gem 'rails-i18n'
+
 gem 'devise'
 gem 'chartkick'
 gem 'groupdate'
