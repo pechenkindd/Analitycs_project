@@ -6,7 +6,7 @@
 
     <div class="field mt">
       <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-text-field" %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-text-field", id: "email-field" %>
     </div>
 
     <div class="field mt-sm">
@@ -14,16 +14,16 @@
       <% if @minimum_password_length %>
       <em>(<%= @minimum_password_length %> characters minimum)</em>
       <% end %><br />
-      <%= f.password_field :password, autocomplete: "new-password", class: "form-text-field" %>
+      <%= f.password_field :password, autocomplete: "new-password", class: "form-text-field", id: "password-field" %>
     </div>
 
     <div class="field mt-sm">
       <%= f.label :password_confirmation, t('device.registrations.password_confirmation') %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-text-field" %>
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-text-field", id: "password-confirm-field" %>
     </div>
 
     <div class="actions mt mb-sm">
-      <%= f.submit t('device.registrations.sign_up'), class: "button button-main" %>
+      <%= f.submit t('device.registrations.sign_up'), class: "button button-main", id: "submit-btn" %>
     </div>
   <% end %>
 

@@ -4,12 +4,12 @@
   <%= form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: false }) do |f| %>
     <div class="field mt">
       <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-text-field" %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-text-field", id: "email-field" %>
     </div>
 
     <div class="field mt-sm">
       <%= f.label :password, t('device.sessions.password') %><br />
-      <%= f.password_field :password, autocomplete: "current-password", class: "form-text-field" %>
+      <%= f.password_field :password, autocomplete: "current-password", class: "form-text-field", id: "password-field" %>
     </div>
 
     <% if devise_mapping.rememberable? %>
@@ -20,7 +20,7 @@
     <% end %>
 
     <div class="actions mt mb-sm">
-      <%= f.submit t("device.sessions.log_in"), class: "button button-main" %>
+      <%= f.submit t("device.sessions.log_in"), class: "button button-main", id: "submit-btn" %>
     </div>
   <% end %>
 
