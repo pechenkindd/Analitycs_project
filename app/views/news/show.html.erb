@@ -1,4 +1,5 @@
 <div class="container">
   <h1 class="title-lg mt-lg mb"><%= @new.topic %></h1>
-  <div class="mt"><%= @new.body %></div>
+  <div class="mt new"><%= @new.body %></div>
+  <div class="mt"><%= link_to t("button.back"), "/themes/#{@new.theme_id}" %></div>
 </div>

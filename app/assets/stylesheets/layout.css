@@ -32,8 +32,13 @@ body {
   color: #DEE7E7;
 }
 
-.new {
+.new, .theme {
   border-color: #C1C3C3;
   border-style: solid;
   border-radius: 5px;
+}
+
+.theme {
+	text-align: center;
+	align-items: center;
 }

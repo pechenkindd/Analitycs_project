@@ -1,4 +1,6 @@
 ru:
+  button:
+    back: "Назад"
   device:
     registrations:
       sign_up: "Регистрация"

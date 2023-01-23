@@ -2,6 +2,6 @@
   <h1 class="title-lg mt-lg mb">Выберете интересующую вас тему</h1>
 
   <% @themes.each do |theme| %>
-    <div class="title mt"><%= link_to theme.name, "themes/#{theme.id}" %></div>
+    <div class="title mt theme"><%= link_to theme.name, "themes/#{theme.id}" %></div>
   <% end %>
 </div>

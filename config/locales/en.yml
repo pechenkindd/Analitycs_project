@@ -33,6 +33,8 @@
 #   hello: "Hello world"
 
 en:
+  button:
+    back: "Back"
   device:
     registrations:
       sign_up: "Sign up"
