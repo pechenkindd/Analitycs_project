@@ -1,16 +1,33 @@
 require 'rails_helper'
 
 RSpec.describe "StaticPages", type: :request do
-  describe "GET /landing_page" do
+  describe "GET /" do
+    before { get root_path }
+    it "returns http success" do  
+      expect(response).to have_http_status(:success)
+    end
+    it 'responds with html' do
+      expect(response.content_type).to match(%r{text/html})
+    end
+  end
+
+  describe "GET /sign_in" do
     it "returns http success" do
-      get "/static_pages/landing_page"
+      get "/users/sign_in"
       expect(response).to have_http_status(:success)
     end
   end
 
-  describe "GET /dashboard" do
+  describe "GET /sign_up" do
     it "returns http success" do
-      get "/static_pages/dashboard"
+      get "/users/sign_in"
+      expect(response).to have_http_status(:success)
+    end
+  end
+
+  describe "GET /" do
+    it "returns http success" do
+      get "/"
       expect(response).to have_http_status(:success)
     end
   end
