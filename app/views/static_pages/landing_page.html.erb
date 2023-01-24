@@ -1,7 +1,7 @@
 <div class="container">
-  <h1 class="title-lg mt-lg mb">Выберете интересующую вас тему</h1>
+  <h1 class="title-lg mt-lg mb"><%= t('main.title') %></h1>
 
-  <% @themes.each do |theme| %>
-    <div class="title mt theme"><%= link_to theme.name, "themes/#{theme.id}" %></div>
+  <% @themes.each_with_index do |theme, i| %>
+    <div class="title mt theme"><%= link_to( t("main.theme##{i+1}"), "themes/#{theme.id}" ) %></div>
   <% end %>
 </div>

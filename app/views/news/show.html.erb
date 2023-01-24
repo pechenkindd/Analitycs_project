@@ -5,17 +5,17 @@
   <div>
     <div class="mt">
       <%= form_with url: 'show' do |form| %>
-        <%= form.submit('Comments', id: 'show-comments-btn') %>
+        <%= form.submit( t('new.comments'), id: 'show-comments-btn', class: "button button-main" ) %>
       <% end %>
     </div>
     <div class="mt">
       <%= form_with url: 'new' do |form| %>
-        <%= form.submit('Write comment', id: 'new-comment-btn') %>
+        <%= form.submit( t('new.new_comment'), id: 'new-comment-btn', class: "button button-main" ) %>
       <% end %>
     </div>
   </div>
 
   <div id="result-container"></div>
 
-  <div class="mt"><%= link_to t("button.back"), "/themes/#{@new.theme_id}" %></div>
+  <div class="mt"><%= link_to t('button.back'), "/themes/#{@new.theme_id}" %></div>
 </div>

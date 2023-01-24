@@ -24,7 +24,7 @@ module AnalyticsProject
     config.load_defaults 7.0
 
     config.i18n.available_locales = [:en, :ru]
-    config.i18n.default_locale = :en
+    config.i18n.default_locale = :ru
 
     # Configuration for the application, engines, and railties goes here.
     #

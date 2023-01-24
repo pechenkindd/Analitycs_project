@@ -42,3 +42,8 @@ body {
 	text-align: center;
 	align-items: center;
 }
+
+.comment {
+	padding-left: 15px;
+	padding-bottom: 10px;
+}

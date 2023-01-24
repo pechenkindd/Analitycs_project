@@ -21,3 +21,8 @@
 .button-main {
   background-color: #6F5B9A;
 }
+
+.button-logout {
+  background-color: #DEE7E7;
+  color: #6F5B9A;
+}

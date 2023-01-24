@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Analytics & News</title>
+    <title>ForumNews</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -21,7 +21,7 @@
     <div>
      <% if current_user %>
       <span class="current-user"><%= current_user.email %>
-      <div class="log-out-btn"><%= button_to t("menu.log_out"), destroy_user_session_path, method: :delete, data: { turbo: false } %></div>
+      <div class="log-out-btn"><%= button_to t("menu.log_out"), destroy_user_session_path, method: :delete, data: { turbo: false }, class: "button button-logout" %></div>
     <% else %>
       <span class="link"><%= link_to t("menu.register"), new_user_registration_path %></span>
       <span class="link"><%= link_to t("menu.log_in"), new_user_session_path %></span>

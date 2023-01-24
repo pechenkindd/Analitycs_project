@@ -33,6 +33,17 @@
 #   hello: "Hello world"
 
 en:
+  main:
+    title: "Choose the topic you are interested in"
+    theme#1: "Politics"
+    theme#2: "Corporate News"
+    theme#3: "Business"
+    theme#4: "Cars"
+    theme#5: "Economy"
+  new:
+    comments: "Comments"
+    no_comments: "No comments"
+    new_comment: "Write comment"
   button:
     back: "Back"
   device:

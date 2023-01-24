@@ -1,3 +1,13 @@
-<div class="new mt">
-  Здесь будут комментарии
+<div class="mt">
+  <% if @comments.size == 0%>
+    <div class="title-sm"><%= t('new.no_comments') %></div>
+  <% else %>
+    <% @comments.each do |comment| %>
+      <div class="new comment mt-sm">
+        <div class="mt comment-author"><%= comment.user.email %></div>
+        <div class="mt comment-body title-sm"><%= comment.body %></div>
+        <div class="new-footer mt-sm"><%= l(comment.created_at, format: :short) %></div>
+      </div>
+  <% end %>
+  <% end %>
 </div>

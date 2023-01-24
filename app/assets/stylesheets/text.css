@@ -30,3 +30,8 @@ header span {
 .new-footer {
   color: #5A5E5E;
 }
+
+.comment-author {
+  font-size: 90%;
+  color: #6F5B9A;
+}
