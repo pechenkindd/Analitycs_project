@@ -13,7 +13,7 @@ body {
 
 .container {
 	background: #F4FAFF;
-	height: 670px;
+	height: 1500px;
 }
 
 .container, .navbar {
@@ -43,7 +43,11 @@ body {
 	align-items: center;
 }
 
-.comment {
+.comment, .list {
 	padding-left: 15px;
 	padding-bottom: 10px;
+}
+
+.new-body {
+	padding: 10px;
 }
