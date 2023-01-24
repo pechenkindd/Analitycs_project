@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     get 'static_pages/landing_page'
     # get 'static_pages/dashboard'
     post '/themes/news/show', to: "news#show_comments"
+    post '/themes/news/new', to: "news#new_comment"
+    post '/themes/news/create_comment', to: "news#create_comment"
     # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
     # Defines the root path route ("/")

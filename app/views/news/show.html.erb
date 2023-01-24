@@ -2,10 +2,17 @@
   <h1 class="title-lg mt-lg mb"><%= @new.topic %></h1>
   <div class="mt new"><%= @new.body %></div>
 
-  <div class="mt">
-    <%= form_with url: 'show' do |form| %>
-      <%= form.submit('Comments', id: 'show-comments-btn') %>
-    <% end %>
+  <div>
+    <div class="mt">
+      <%= form_with url: 'show' do |form| %>
+        <%= form.submit('Comments', id: 'show-comments-btn') %>
+      <% end %>
+    </div>
+    <div class="mt">
+      <%= form_with url: 'new' do |form| %>
+        <%= form.submit('Write comment', id: 'new-comment-btn') %>
+      <% end %>
+    </div>
   </div>
 
   <div id="result-container"></div>
